@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PostsList.PostActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/post_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bottom_storke_toolbar"
+        android:paddingLeft="15dp"
+        android:paddingRight="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="글"
+            android:textColor="@color/titleColor"
+            android:textSize="19sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/post_Layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="35dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/post_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="30dp"
+                android:text="제목"
+                android:textColor="@color/titleColor"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/post_Write"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:lineSpacingExtra="12sp"
+                android:textColor="@color/titleColor"
+                android:text="내용"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/post_Layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="35dp"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <EditText
+                android:id="@+id/post_Title_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="@null"
+                android:hint="제목"
+                android:textColor="@color/titleColor"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/post_Write_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:background="@null"
+                android:gravity="top"
+                android:textColor="@color/titleColor"
+                android:hint="내용"
+                android:lineSpacingExtra="12sp"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/view_radius"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/post_top_gravity"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/icon_top"
+            android:onClick="onClick" />
+
+        <ImageView
+            android:id="@+id/post_center_gravity"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/icon_center"
+            android:onClick="onClick" />
+
+        <ImageView
+            android:id="@+id/post_right_gravity"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/icon_right"
+            android:onClick="onClick" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/post_edit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/icon_edit"
+                android:onClick="onClick"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/post_apply"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/icon_check"
+                android:onClick="onClick"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/post_remove"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/icon_remove"
+            android:onClick="onClickHandler" />
+
+    </LinearLayout>
+</LinearLayout>

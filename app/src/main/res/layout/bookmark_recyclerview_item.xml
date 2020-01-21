@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bookmark_Item_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/view_radius"
+    android:paddingHorizontal="30dp">
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/bookmark_Item_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="제목"
+        android:textColor="@color/titleColor"
+        android:textSize="21sp" />
+
+    <FrameLayout
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="right"
+            android:src="@drawable/icon_bookmark_full" />
+    </FrameLayout>
+
+</RelativeLayout>

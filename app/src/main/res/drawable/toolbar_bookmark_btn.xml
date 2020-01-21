@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/icon_bookmark" android:state_checked="false">
+        <shape android:shape="oval">
+            <size android:width="24dp" android:height="24dp"></size>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/icon_bookmark_full" android:state_checked="true">
+        <shape android:shape="oval">
+            <size android:width="24dp" android:height="24dp"></size>
+        </shape>
+    </item>
+</selector>
