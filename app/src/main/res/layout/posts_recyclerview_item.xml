@@ -32,7 +32,7 @@
             android:ellipsize="end"
             android:gravity="center_vertical"
             android:maxLines="2"
-            android:text="내용이에유내용이에유내용이에유내용이에유내용이에유내용이에유내용이에유내용이에유내용이에유내용이에유내용이에유내용이에유" />
+            android:text="내용이f에유내용이에유내용이에유내용이에유내용이에유내용이에유내용이에유내용이에유내용이에유내용이에유내용이에유내용이에유" />
     </LinearLayout>
 
 
